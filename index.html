@@ -16,7 +16,115 @@
     <noscript
       ><link rel="stylesheet" href="assets/css/noscript.css"
     /></noscript>
+
+    <title>vCard Design</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        /* padding: 20px; */
+      }
+      /* .vcard-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+      } */
+      .heading-projects {
+        text-align: center;
+        padding: 20px 0 0 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      .heading-projects h1 {
+        font-size: 30px;
+        margin: 0 0 0 0;
+      }
+      .vcard-grid {
+        display: grid;
+        margin: auto;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        padding: 60px;
+      }
+
+      @media (max-width: 986px) {
+        .vcard-grid {
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+      }
+      .vcard {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* padding: 20px; */
+      }
+      /* .vcard h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #0d0d0e;
+      } */
+      .vcard p {
+        font-size: 16px;
+        line-height: 22px;
+        margin-left: 20px;
+        margin-right: 15px;
+        text-align: justify;
+        color: #0d0d0e;
+      }
+
+      .vcard header {
+        text-align: left;
+        /* margin-bottom: 20px; */
+      }
+
+      .vcard footer {
+        margin-top: auto; /* Push footer to the bottom */
+        text-align: left;
+        padding: 10px;
+      }
+      .vcard header h1 {
+        font-size: 18px;
+        text-align: left;
+        margin: 20px 20px 5px 20px;
+        color: #0d0d0e;
+      }
+      .vcard footer p {
+        margin-top: 10px;
+      }
+      .vcard .vcardbody p {
+        flex-grow: 1;
+        margin: 10px 15px 0 20px;
+      }
+      .vcard .tag {
+        font-size: 10px;
+        display: inline-block;
+        background-color: #16303d;
+        color: #ffffff;
+        padding: 0px 5px 0px 5px;
+        margin-left: 10px;
+        border-radius: 5px;
+      }
+      .wrapper.style3 {
+        background-color: #21b2a6;
+      }
+     
+      .wrapper.style3 h3{
+        color: rgb(255, 255, 255);
+      }
+
+      .wrapper.style3 header.major h2{
+        border-color: #f4f4f4;
+      }
+    </style>
   </head>
+
   <body class="landing is-preload">
     <!-- Page Wrapper -->
     <div id="page-wrapper">
@@ -49,7 +157,7 @@
             Here are some few projects I have done.<br />
             This will enable you to get an idea of my skill sets.
           </p>
-          <ul class="actions special">
+          <!-- <ul class="actions special">
             <li>
               <a
                 href="https://www.instagram.com/thebusylad_/"
@@ -57,22 +165,48 @@
                 >@thebusylad_</a
               >
             </li>
-          </ul>
+          </ul> -->
         </div>
         <a href="#one" class="more scrolly">Learn More</a>
       </section>
-
       <!-- One -->
       <section id="one" class="wrapper style1 special">
         <div class="inner">
           <header class="major">
             <h2>Introduction</h2>
             <p>
-              I, Vasitha Tilakumara, Data Science student following the masters
-              program at RMIT, Australia.<br />
+              I'm thrilled to welcome you to my data science portfolio. As a
+              dedicated student pursuing a Master of Data Science at RMIT
+              University, Australia. I am passionate about leveraging
+              data-driven insights to make informed decisions and drive
+              impactful change. With a solid foundation in statistics, machine
+              learning, and data visualization, I am equipped with the skills to
+              tackle complex data challenges head-on.
+              <br />
+              <br />
+              journey into the world of data science began with a background in
+              programming languages like C++ and a focus on embedded engineering
+              in the Internet of Things (IoT) realm. This unique blend of
+              experiences has provided me with a holistic understanding of data
+              acquisition, processing, and analysis, setting the stage for a
+              seamless transition into the roles of both a data engineer and a
+              data analyst.
+              <br />
+              <br />
+              Throughout my portfolio, you'll find a diverse range of projects
+              showcasing my expertise in data cleaning and exploration. From
+              uncovering insights in real estate datasets to extracting patterns
+              from consumer behavior data, each project demonstrates my ability
+              to extract meaningful insights from raw data. Moreover, my
+              experience in C++ and embedded engineering has honed my
+              problem-solving skills and attention to detail, qualities that are
+              indispensable in the field of data science. Join me on this
+              journey as we dive into the exciting world of data science, where
+              curiosity meets analysis, and insights pave the way for
+              innovation.<br />
             </p>
           </header>
-          <ul class="icons major">
+          <!-- <ul class="icons major">
             <li>
               <span class="icon fa-gem major style1"
                 ><span class="label">Lorem</span></span
@@ -88,120 +222,192 @@
                 ><span class="label">Dolor</span></span
               >
             </li>
-          </ul>
+          </ul> -->
         </div>
       </section>
 
       <!-- Two -->
       <section id="two" class="wrapper alt style2">
-        <section class="spotlight">
-          <div class="image">
+        <div class="heading-projects">
+          <h1>Projects</h1>
+        </div>
+        <div class="vcard-grid">
+          <div class="vcard">
             <a
               href="https://github.com/VasithaTilakumara/DataSciencePortfolio/tree/main/Data%20Cleaning"
             >
-              <img src="images/data-cleaning.jpg" alt="" />
+              <header>
+                <h1>Data Cleaning: Multiple Data sets</h1>
+              </header>
+              <div class="vcardbody">
+                <p>
+                  Demonstrated proficiency in merging, transforming, and
+                  reshaping datasets using the R programming language. Ensured
+                  data integrity and employed advanced techniques for effective
+                  data preprocessing. Successfully handled diverse datasets to
+                  prepare them for analysis.
+                </p>
+              </div>
             </a>
-          </div>
-          <div class="content">
-            <a
-              href="https://github.com/VasithaTilakumara/DataSciencePortfolio/tree/main/Data%20Cleaning"
-            >
-              <h2>Data Cleaning in SQL Test</h2>
-              <p>In this we clean housing data in SQL server.<br /></p>
-            </a>
-          </div>
-        </section>
-        <section class="spotlight">
-          <div class="image">
-            <a href="https://public.tableau.com/app/profile/vasitha.tilakumara">
-              <img
-                style="background-color: #f5f5f5"
-                src="images/Tableau-Logo.png"
-                alt=""
-            /></a>
-          </div>
-          <div class="content">
-            <a href="https://public.tableau.com/app/profile/vasitha.tilakumara">
-              <h2>Tableau Projects</h2>
-              <p>
-                These contains all the Tableau projects I have completed so far.
-              </p>
-            </a>
-          </div>
-        </section>
-        <section class="spotlight">
-          <div class="image">
-            <a
-              href="https://github.com/VasithaTilakumara/DataSciencePortfolio/tree/main/Data%20Exploration"
-            >
-              <img src="images/data-explore.jpg" alt="" />
-            </a>
+            <footer>
+              <span class="tag">R</span>
+              <span class="tag">RStudio</span>
+              <span class="tag">Data Cleaning</span>
+            </footer>
           </div>
 
-          <div class="content">
+          <div class="vcard">
             <a
-              href="https://github.com/VasithaTilakumara/DataSciencePortfolio/tree/main/Data%20Exploration"
+              href="https://github.com/VasithaTilakumara/DataSciencePortfolio/tree/main/Data%20Cleaning"
             >
-              <h2>Data Exploration</h2>
-              <p>Data exploration of COVID 19 data set using SQL Server</p>
+              <header>
+                <h1>Data Cleaning: Synthetic Data sets</h1>
+              </header>
+              <div class="vcardbody">
+                <p>
+                  Undertook a comprehensive data analysis project using R
+                  programming language, simulating the role of a data analyst
+                  for Bunnings hardware retailer. Synthesized realistic yet
+                  simulated data, combined multiple datasets, preprocessed, and
+                  conducted insightful analyses.
+                </p>
+              </div>
             </a>
+            <footer>
+              <span class="tag">R</span>
+              <span class="tag">RStudio</span>
+              <span class="tag">Data Cleaning</span>
+            </footer>
           </div>
-        </section>
+          <div class="vcard">
+            <a
+              href="https://github.com/VasithaTilakumara/DataSciencePortfolio/tree/main/Data%20Cleaning"
+            >
+              <header>
+                <h1>Data Cleaning: SQL</h1>
+              </header>
+              <div class="vcardbody">
+                <p>
+                  This project contains the preparation of sample housing data
+                  using SQL by conducting thorough cleaning tasks to ensure data
+                  integrity and usability. This involved removing duplicate
+                  entries, handling missing values, standardizing formats and
+                  units, correcting errors, validating against rules, and
+                  normalizing categorical variables. The cleaned dataset is now
+                  primed for analysis and insights extraction.
+                </p>
+              </div>
+            </a>
+            <footer>
+              <span class="tag">SQL</span>
+              <span class="tag">Microsoft SQL Server Management Studio</span>
+              <span class="tag">Data Cleaning</span>
+            </footer>
+          </div>
+          <div class="vcard">
+            <a
+              href="https://github.com/VasithaTilakumara/DataSciencePortfolio/tree/main/Data%20Cleaning"
+            >
+              <header>
+                <h1>Data Exploration: COVID-19 Insights</h1>
+              </header>
+              <div class="vcardbody">
+                <p>
+                  Explore COVID-19 data insights through SQL queries. Discover trends in 
+                  infection rates, death percentages, and vaccination progress across continents 
+                  and countries. Leveraged skills in joins, CTEs, temp tables, and 
+                  aggregate functions for comprehensive data analysis and visualization.
+                </p>
+              </div>
+            </a>
+            <footer>
+              <span class="tag">SQL</span>
+              <span class="tag">SQLite Studio</span>
+              <span class="tag">Data Exploration</span>
+            </footer>
+          </div>
+          <div class="vcard">
+            <a
+              href="https://github.com/VasithaTilakumara/DataSciencePortfolio/tree/main/Data%20Cleaning"
+            >
+              <header>
+                <h1>Data Modelling & Data Exploration: COVID-19 Insights</h1>
+              </header>
+              <div class="vcardbody">
+                <p>
+                  This project utilizes a publicly available dataset, focusing on global COVID-19 
+                  vaccinations. The dataset includes information on vaccination rates, types, and 
+                  daily observations across various countries. The project begins with designing a 
+                  database. Following database creation and data importation, SQL queries are employed 
+                  to investigate different aspects of the dataset. Subsequently, data visualizations 
+                  are generated using Excel, presenting insights from the queries in an intuitive and 
+                  visually appealing manner.
+                </p>
+              </div>
+            </a>
+            <footer>
+              <span class="tag">SQL</span>
+              <span class="tag">SQLite Studio</span>
+              <span class="tag">Ms Excel</span>
+              <span class="tag">Lucid Chart</span>
+              <span class="tag">Data Exploration</span>
+            </footer>
+          </div>
+          </div>
+          <!-- </div> -->
+        </div>
       </section>
 
       <!-- Three -->
       <section id="three" class="wrapper style3 special">
         <div class="inner">
           <header class="major">
-            <h2>Accumsan mus tortor nunc aliquet</h2>
-            <p>
-              Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet
-              eleifend<br />
-              fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus
-              ullamcorper.
-            </p>
+            <h2>Skills</h2>
           </header>
           <ul class="features">
-            <li class="icon fa-paper-plane">
-              <h3>Arcu accumsan</h3>
-              <p>
-                Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-                tincidunt nullam amet leo Aenean ligula consequat consequat.
+            <li class="icon solid fa-code">
+              <h3>Programming</h3>
+              <p style="text-align: left;">
+                Proficient in programming languages such as Python, R, and SQL to manipulate, 
+                analyze, and visualize data efficiently. Skilled in writing clean, maintainable 
+                code to perform complex data tasks, including data preprocessing, analysis, and 
+                machine learning model development.
               </p>
             </li>
             <li class="icon solid fa-laptop">
-              <h3>Ac Augue Eget</h3>
-              <p>
-                Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-                tincidunt nullam amet leo Aenean ligula consequat consequat.
+              <h3>Data Wrangling</h3>
+              <p style="text-align: left;"> 
+                Experienced in cleaning, transforming, and organizing raw data from various sources
+                to make it suitable for analysis. Proficient in using tools like pandas in Python 
+                and dplyr in R to handle missing values, remove duplicates, and reshape data for 
+                analysis.
               </p>
             </li>
-            <li class="icon solid fa-code">
-              <h3>Mus Scelerisque</h3>
-              <p>
-                Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-                tincidunt nullam amet leo Aenean ligula consequat consequat.
+            <li class="icon solid fa-database">
+              <h3>Databases</h3>
+              <p style="text-align: left;"> 
+                Experienced in designing and querying relational databases using tools like MySQL, 
+                PostgreSQL, and SQLite. Proficient in creating and optimizing database schemas, 
+                writing SQL queries to extract and manipulate data, and ensuring data integrity and 
+                security.
               </p>
             </li>
-            <li class="icon solid fa-headphones-alt">
-              <h3>Mauris Imperdiet</h3>
-              <p>
-                Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-                tincidunt nullam amet leo Aenean ligula consequat consequat.
+            <li class="icon solid fa-chart-pie">
+              <h3>Data Visualization</h3>
+              <p style="text-align: left;">
+                Proficient in using data visualization libraries and tools such as Matplotlib, 
+                Seaborn, and Tableau to create insightful and visually appealing visualizations. 
+                Skilled in translating complex data insights into clear and engaging visual 
+                representations to communicate findings effectively.
               </p>
-            </li>
-            <li class="icon fa-heart">
-              <h3>Aenean Primis</h3>
-              <p>
-                Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-                tincidunt nullam amet leo Aenean ligula consequat consequat.
-              </p>
-            </li>
-            <li class="icon fa-flag">
-              <h3>Tortor Ut</h3>
-              <p>
-                Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-                tincidunt nullam amet leo Aenean ligula consequat consequat.
+            </li>            
+            <li class="icon solid fa-table">
+              <h3>Microsoft Excel</h3>
+              <p style="text-align: left;">
+                Proficient in using Microsoft Excel for data analysis, manipulation, and 
+                visualization. Skilled in performing common tasks such as data cleaning, 
+                filtering, and pivot tables, as well as creating charts and graphs to present 
+                data insights effectively.
               </p>
             </li>
           </ul>
@@ -249,7 +455,7 @@
             >
           </li> -->
           <li>
-            <a href="#" class="fab fa-linkedin-in"
+            <a href="https://www.linkedin.com/in/vasitha-tilakumara/" class="fab fa-linkedin-in"
               ><span class="label"></span
             ></a>
           </li>
