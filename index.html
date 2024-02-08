@@ -32,16 +32,29 @@
         max-width: 1200px;
         margin: 0 auto;
       } */
+      .wrapper.style1 header.major h2{
+        border-color: #fff;
+      }
       .heading-projects {
         text-align: center;
-        padding: 20px 0 0 0;
+        padding: 3em 0 0 0;
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       }
 
       .heading-projects h1 {
-        font-size: 30px;
+        border-bottom: solid 2px #fff;
+        display: inline-block;
+        padding-bottom: 1em;
+        font-size: 1.35em;
         margin: 0 0 0 0;
       }
+      @media screen and (max-width: 736px){
+        .heading-projects h1 {
+            font-size: 1.1em;
+            line-height: 1.65em;
+        }
+      }
+
       .vcard-grid {
         display: grid;
         margin: auto;
@@ -75,7 +88,7 @@
         line-height: 22px;
         margin-left: 20px;
         margin-right: 15px;
-        text-align: justify;
+        text-align: left;
         color: #0d0d0e;
       }
 
@@ -85,22 +98,22 @@
       }
 
       .vcard footer {
+        padding: 18px 24px 24px 24px;
         margin-top: auto; /* Push footer to the bottom */
         text-align: left;
-        padding: 10px;
       }
       .vcard header h1 {
         font-size: 18px;
         text-align: left;
-        margin: 20px 20px 5px 20px;
+        margin: 24px 24px 5px 24px;
         color: #0d0d0e;
       }
-      .vcard footer p {
+      .vcard footer p {        
         margin-top: 10px;
       }
       .vcard .vcardbody p {
         flex-grow: 1;
-        margin: 10px 15px 0 20px;
+        margin: 10px 24px 0 24px;
       }
       .vcard .tag {
         font-size: 10px;
@@ -108,7 +121,7 @@
         background-color: #16303d;
         color: #ffffff;
         padding: 0px 5px 0px 5px;
-        margin-left: 10px;
+        /* margin-left: 10px; */
         border-radius: 5px;
       }
       .wrapper.style3 {
@@ -116,6 +129,7 @@
       }
      
       .wrapper.style3 h3{
+        text-align: center;
         color: rgb(255, 255, 255);
       }
 
@@ -154,7 +168,7 @@
         <div class="inner">
           <h2>Vasitha Tilakumara Portfolio</h2>
           <p>
-            Here are some few projects I have done.<br />
+            Here are a few projects I have done.<br />
             This will enable you to get an idea of my skill sets.
           </p>
           <!-- <ul class="actions special">
@@ -367,7 +381,7 @@
           <ul class="features">
             <li class="icon solid fa-code">
               <h3>Programming</h3>
-              <p style="text-align: left;">
+              <p>
                 Proficient in programming languages such as Python, R, and SQL to manipulate, 
                 analyze, and visualize data efficiently. Skilled in writing clean, maintainable 
                 code to perform complex data tasks, including data preprocessing, analysis, and 
@@ -376,7 +390,7 @@
             </li>
             <li class="icon solid fa-laptop">
               <h3>Data Wrangling</h3>
-              <p style="text-align: left;"> 
+              <p> 
                 Experienced in cleaning, transforming, and organizing raw data from various sources
                 to make it suitable for analysis. Proficient in using tools like pandas in Python 
                 and dplyr in R to handle missing values, remove duplicates, and reshape data for 
@@ -385,7 +399,7 @@
             </li>
             <li class="icon solid fa-database">
               <h3>Databases</h3>
-              <p style="text-align: left;"> 
+              <p> 
                 Experienced in designing and querying relational databases using tools like MySQL, 
                 PostgreSQL, and SQLite. Proficient in creating and optimizing database schemas, 
                 writing SQL queries to extract and manipulate data, and ensuring data integrity and 
@@ -394,7 +408,7 @@
             </li>
             <li class="icon solid fa-chart-pie">
               <h3>Data Visualization</h3>
-              <p style="text-align: left;">
+              <p>
                 Proficient in using data visualization libraries and tools such as Matplotlib, 
                 Seaborn, and Tableau to create insightful and visually appealing visualizations. 
                 Skilled in translating complex data insights into clear and engaging visual 
@@ -403,7 +417,7 @@
             </li>            
             <li class="icon solid fa-table">
               <h3>Microsoft Excel</h3>
-              <p style="text-align: left;">
+              <p>
                 Proficient in using Microsoft Excel for data analysis, manipulation, and 
                 visualization. Skilled in performing common tasks such as data cleaning, 
                 filtering, and pivot tables, as well as creating charts and graphs to present 
